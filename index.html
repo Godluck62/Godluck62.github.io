@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My New Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Godluck Gaming</title>
+
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-background:#111;
+font-family:Arial,sans-serif;
+background:#0f172a;
 color:white;
-font-family:Arial;
 text-align:center;
-padding-top:100px;
 }
-button{
-padding:15px 30px;
+
+header{
+background:#111827;
+padding:20px;
+font-size:32px;
+font-weight:bold;
+color:#00ff99;
+}
+
+.hero{
+padding:50px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
 font-size:20px;
+margin-bottom:25px;
+}
+
+button{
 background:#00ff99;
+color:black;
 border:none;
+padding:15px 30px;
+font-size:18px;
 border-radius:30px;
+cursor:pointer;
+}
+
+.games{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+width:250px;
+border-radius:15px;
+}
+
+.card h2{
+color:#00ff99;
+margin-bottom:10px;
+}
+
+footer{
+background:#111827;
+padding:20px;
+margin-top:30px;
 }
 </style>
 </head>
+
 <body>
 
-<h1>🔥 Welcome Godluck 🔥</h1>
-<p>My New Website is Live!</p>
+<header>🎮 GODLUCK GAMING</header>
 
-<button onclick="showMessage()">Click Me</button>
+<section class="hero">
+<h1>Welcome Gamer!</h1>
+<p>Free Fire • BGMI • GTA V • Minecraft</p>
+
+<button onclick="play()">Play Now</button>
+</section>
+
+<section class="games">
+
+<div class="card">
+<h2>🔥 Free Fire</h2>
+<p>Tips, Tricks & Updates</p>
+</div>
+
+<div class="card">
+<h2>⚔ BGMI</h2>
+<p>Best Sensitivity & Settings</p>
+</div>
+
+<div class="card">
+<h2>🚗 GTA V</h2>
+<p>Mods & Missions</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Godluck Gaming
+</footer>
 
 <script>
-function showMessage(){
-alert("Welcome Godluck! 🎉");
+function play(){
+alert("Welcome to Godluck Gaming! 🎮");
 }
 </script>
 
